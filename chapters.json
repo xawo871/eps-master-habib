@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "ko": "자기소개",
+    "id_title": "Perkenalan diri",
+    "material": "Nama negara, pekerjaan, 입니다/입니까?, 은/는; memperkenalkan diri dan bertanya pekerjaan.",
+    "volume": 1
+  },
+  {
+    "id": 2,
+    "ko": "생활용품",
+    "id_title": "Barang kebutuhan sehari-hari",
+    "material": "Benda kantor dan kebutuhan sehari-hari; 이에요/예요, 이/가 아니에요.",
+    "volume": 1
+  },
+  {
+    "id": 3,
+    "ko": "위치와 장소",
+    "id_title": "Lokasi dan tempat",
+    "material": "Furnitur, elektronik, tempat; 이/가 있어요/없어요 dan 에 untuk lokasi.",
+    "volume": 1
+  },
+  {
+    "id": 4,
+    "ko": "동작과 사물",
+    "id_title": "Tindakan dan benda",
+    "material": "Kata kerja kegiatan sehari-hari; -아요/어요 dan 을/를.",
+    "volume": 1
+  },
+  {
+    "id": 5,
+    "ko": "날짜와 요일",
+    "id_title": "Tanggal dan hari",
+    "material": "Nama hari dan tanggal; 에 untuk waktu dan -았/었-.",
+    "volume": 1
+  },
+  {
+    "id": 6,
+    "ko": "하루 일과",
+    "id_title": "Rutinitas sehari-hari",
+    "material": "Kosakata waktu dan rutinitas; -(스)ㅂ니다/-(스)ㅂ니까?",
+    "volume": 1
+  },
+  {
+    "id": 7,
+    "ko": "계절과 날씨",
+    "id_title": "Musim dan cuaca",
+    "material": "Musim dan cuaca; ungkapan tentang cuaca.",
+    "volume": 1
+  },
+  {
+    "id": 8,
+    "ko": "가족과 친구",
+    "id_title": "Keluarga dan teman",
+    "material": "Kosakata keluarga dan teman; memperkenalkan orang terdekat.",
+    "volume": 1
+  },
+  {
+    "id": 9,
+    "ko": "음식 주문",
+    "id_title": "Memesan makanan",
+    "material": "Kosakata makanan dan ungkapan memesan makanan.",
+    "volume": 1
+  },
+  {
+    "id": 10,
+    "ko": "물건 구입",
+    "id_title": "Membeli barang",
+    "material": "Kosakata belanja dan ungkapan bertanya harga/membeli.",
+    "volume": 1
+  },
+  {
+    "id": 11,
+    "ko": "집안일",
+    "id_title": "Pekerjaan rumah",
+    "material": "Kosakata dan ungkapan pekerjaan rumah.",
+    "volume": 1
+  },
+  {
+    "id": 12,
+    "ko": "대중교통",
+    "id_title": "Transportasi umum",
+    "material": "Kosakata transportasi umum dan cara menggunakannya.",
+    "volume": 1
+  },
+  {
+    "id": 13,
+    "ko": "주말 활동",
+    "id_title": "Kegiatan akhir pekan",
+    "material": "Kegiatan saat akhir pekan dan cara menceritakannya.",
+    "volume": 1
+  },
+  {
+    "id": 14,
+    "ko": "길 찾기",
+    "id_title": "Mencari jalan",
+    "material": "Bertanya dan memberi petunjuk arah.",
+    "volume": 1
+  },
+  {
+    "id": 15,
+    "ko": "옷차림",
+    "id_title": "Pakaian dan penampilan",
+    "material": "Kosakata pakaian dan cara mendeskripsikannya.",
+    "volume": 1
+  },
+  {
+    "id": 16,
+    "ko": "집 구하기",
+    "id_title": "Mencari tempat tinggal",
+    "material": "Kosakata rumah/tempat tinggal dan percakapan mencari rumah.",
+    "volume": 1
+  },
+  {
+    "id": 17,
+    "ko": "휴가",
+    "id_title": "Liburan",
+    "material": "Kosakata dan percakapan tentang liburan.",
+    "volume": 1
+  },
+  {
+    "id": 18,
+    "ko": "취미",
+    "id_title": "Hobi",
+    "material": "Menyebutkan dan membicarakan hobi.",
+    "volume": 1
+  },
+  {
+    "id": 19,
+    "ko": "요리",
+    "id_title": "Memasak",
+    "material": "Kosakata memasak dan langkah sederhana.",
+    "volume": 1
+  },
+  {
+    "id": 20,
+    "ko": "인터넷과 스마트폰",
+    "id_title": "Internet dan ponsel pintar",
+    "material": "Kosakata dan aktivitas terkait internet dan smartphone.",
+    "volume": 1
+  },
+  {
+    "id": 21,
+    "ko": "병원",
+    "id_title": "Rumah sakit",
+    "material": "Kosakata gejala dan komunikasi di rumah sakit.",
+    "volume": 1
+  },
+  {
+    "id": 22,
+    "ko": "약국",
+    "id_title": "Apotek",
+    "material": "Kosakata obat dan percakapan di apotek.",
+    "volume": 1
+  },
+  {
+    "id": 23,
+    "ko": "우체국",
+    "id_title": "Kantor pos",
+    "material": "Mengirim surat/paket dan kosakata kantor pos.",
+    "volume": 1
+  },
+  {
+    "id": 24,
+    "ko": "은행",
+    "id_title": "Bank",
+    "material": "Kosakata dan percakapan layanan perbankan.",
+    "volume": 1
+  },
+  {
+    "id": 25,
+    "ko": "외국인 근로자 지원 기관",
+    "id_title": "Lembaga dukungan pekerja asing",
+    "material": "Mengenal lembaga dukungan bagi pekerja asing.",
+    "volume": 1
+  },
+  {
+    "id": 26,
+    "ko": "한국의 주거 문화와 음식 문화",
+    "id_title": "Budaya tempat tinggal dan makanan Korea",
+    "material": "Informasi budaya hunian dan makanan Korea.",
+    "volume": 1
+  },
+  {
+    "id": 27,
+    "ko": "한국의 기념일",
+    "id_title": "Hari peringatan Korea",
+    "material": "Kosakata dan informasi hari peringatan Korea.",
+    "volume": 1
+  },
+  {
+    "id": 28,
+    "ko": "한국의 명절",
+    "id_title": "Hari raya tradisional Korea",
+    "material": "Mengenal Seollal, Chuseok, dan budaya hari raya.",
+    "volume": 1
+  },
+  {
+    "id": 29,
+    "ko": "한국의 예절",
+    "id_title": "Tata krama Korea",
+    "material": "Etika di tempat umum dan perilaku yang tidak pantas.",
+    "volume": 1
+  },
+  {
+    "id": 30,
+    "ko": "한국의 대중문화",
+    "id_title": "Budaya populer Korea",
+    "material": "Olahraga profesional dan Hallyu/budaya Korea populer.",
+    "volume": 1
+  },
+  {
+    "id": 31,
+    "ko": "복장과 근무 태도",
+    "id_title": "Pakaian dan sikap kerja",
+    "material": "Kosakata pakaian kerja dan sikap; -아/어 보이다, -게.",
+    "volume": 2
+  },
+  {
+    "id": 32,
+    "ko": "회사 시설 사용",
+    "id_title": "Penggunaan Fasilitas Perusahaan",
+    "material": "Kosakata asrama dan kantin; tata bahasa -잖아(요) dan -아/어 놓다.",
+    "volume": 2
+  },
+  {
+    "id": 33,
+    "ko": "동료와의 관계",
+    "id_title": "Hubungan dengan rekan kerja",
+    "material": "Suasana kerja dan hubungan kolega; -는/(으)ㄴ 편이다, -거든요.",
+    "volume": 2
+  },
+  {
+    "id": 34,
+    "ko": "성희롱 및 성추행 예방",
+    "id_title": "Pencegahan pelecehan seksual",
+    "material": "Kosakata pencegahan dan penanganan pelecehan; -던데요, -(느)ㄴ다고/다고 하다.",
+    "volume": 2
+  },
+  {
+    "id": 35,
+    "ko": "작업장 관리",
+    "id_title": "Pengelolaan tempat kerja",
+    "material": "Pengelolaan lingkungan kerja dan gudang material.",
+    "volume": 2
+  },
+  {
+    "id": 36,
+    "ko": "출하 관리",
+    "id_title": "Pengelolaan pengiriman barang",
+    "material": "Pengemasan, pemuatan, dan pelaporan proses pengiriman.",
+    "volume": 2
+  },
+  {
+    "id": 37,
+    "ko": "기계 가공",
+    "id_title": "Pemrosesan mesin",
+    "material": "Pengoperasian mesin, alat kerja, dan kegunaannya.",
+    "volume": 2
+  },
+  {
+    "id": 38,
+    "ko": "기계 조립",
+    "id_title": "Perakitan Mesin",
+    "material": "Kosakata komponen dan peralatan perakitan mesin; menjelaskan proses perakitan; tata bahasa -(으)면서 dan -는 중이다.",
+    "volume": 2
+  },
+  {
+    "id": 39,
+    "ko": "금속 가공",
+    "id_title": "Pemrosesan Logam",
+    "material": "Kosakata alat dan proses pemrosesan logam; menjelaskan kegiatan pemotongan dan pengerjaan logam.",
+    "volume": 2
+  },
+  {
+    "id": 40,
+    "ko": "플라스틱 고무 성형",
+    "id_title": "Pencetakan Plastik dan Karet",
+    "material": "Kosakata bahan, pencampuran, pembentukan plastik/karet, serta pemeriksaan hasil produksi.",
+    "volume": 2
+  },
+  {
+    "id": 41,
+    "ko": "섬유 제조",
+    "id_title": "Produksi tekstil",
+    "material": "Penyimpanan/pengelolaan benang dan proses pewarnaan kain.",
+    "volume": 2
+  },
+  {
+    "id": 42,
+    "ko": "가구 제작",
+    "id_title": "Pembuatan furnitur",
+    "material": "Persiapan pembuatan furnitur, pengamplasan dan pengecatan.",
+    "volume": 2
+  },
+  {
+    "id": 43,
+    "ko": "건축 시공",
+    "id_title": "Konstruksi bangunan",
+    "material": "Kosakata pengikatan tulangan dan pemasangan bekisting.",
+    "volume": 2
+  },
+  {
+    "id": 44,
+    "ko": "토목 시공",
+    "id_title": "Konstruksi Teknik Sipil",
+    "material": "Kosakata pekerjaan teknik sipil, saluran air, dan pekerjaan konstruksi; memahami instruksi kerja.",
+    "volume": 2
+  },
+  {
+    "id": 45,
+    "ko": "농작물 재배",
+    "id_title": "Budidaya Tanaman",
+    "material": "Kosakata dan proses budidaya tanaman pertanian; kegiatan menanam dan merawat tanaman.",
+    "volume": 2
+  },
+  {
+    "id": 46,
+    "ko": "사육 관리",
+    "id_title": "Pengelolaan Peternakan",
+    "material": "Kosakata pemeliharaan ternak, pemberian pakan, dan kebersihan kandang.",
+    "volume": 2
+  },
+  {
+    "id": 47,
+    "ko": "연안 어업과 양식",
+    "id_title": "Perikanan Pesisir dan Budi Daya Perairan",
+    "material": "Kosakata kegiatan perikanan pesisir dan budi daya perairan.",
+    "volume": 2
+  },
+  {
+    "id": 48,
+    "ko": "선체 건조",
+    "id_title": "Pembuatan Badan Kapal",
+    "material": "Kosakata proses pembuatan badan kapal dan pekerjaan galangan kapal.",
+    "volume": 2
+  },
+  {
+    "id": 49,
+    "ko": "광물 자원 개발 생산",
+    "id_title": "Pengembangan dan Produksi Sumber Daya Mineral",
+    "material": "Kosakata kegiatan tambang, pengembangan sumber daya mineral, dan produksi.",
+    "volume": 2
+  },
+  {
+    "id": 50,
+    "ko": "산림 자원 조성",
+    "id_title": "Pengelolaan Sumber Daya Hutan",
+    "material": "Kosakata pengelolaan sumber daya hutan dan kegiatan pembibitan/penebangan.",
+    "volume": 2
+  },
+  {
+    "id": 51,
+    "ko": "숙박 서비스",
+    "id_title": "Layanan Akomodasi",
+    "material": "Kosakata perlengkapan penginapan, layanan tamu, dan penataan kamar.",
+    "volume": 2
+  },
+  {
+    "id": 52,
+    "ko": "음식 조리",
+    "id_title": "Pengolahan Makanan",
+    "material": "Kosakata bahan makanan, proses memasak, dan kebersihan saat menyiapkan makanan.",
+    "volume": 2
+  },
+  {
+    "id": 53,
+    "ko": "산업 안전 및 보건 표지",
+    "id_title": "Rambu keselamatan dan kesehatan industri",
+    "material": "Rambu peringatan dan larangan; -았더니/었더니, -아/어 있다.",
+    "volume": 2
+  },
+  {
+    "id": 54,
+    "ko": "산업 안전 및 보건 수칙",
+    "id_title": "Aturan keselamatan dan kesehatan industri",
+    "material": "Aturan K3 dan pencegahan kecelakaan; -도록 하다, -기 위해.",
+    "volume": 2
+  },
+  {
+    "id": 55,
+    "ko": "산업 안전 및 위생 장비",
+    "id_title": "Peralatan keselamatan dan higiene",
+    "material": "Jenis/fungsi APD dan perlengkapan pelindung.",
+    "volume": 2
+  },
+  {
+    "id": 56,
+    "ko": "산업 재해 및 응급 처치",
+    "id_title": "Kecelakaan kerja dan pertolongan pertama",
+    "material": "Respons awal kecelakaan dan keadaan darurat.",
+    "volume": 2
+  },
+  {
+    "id": 57,
+    "ko": "고용허가제",
+    "id_title": "Sistem izin kerja",
+    "material": "Materi tentang Employment Permit System; ringkasan perlu diverifikasi dengan PDF.",
+    "volume": 2
+  },
+  {
+    "id": 58,
+    "ko": "근로기준법",
+    "id_title": "Undang-undang standar ketenagakerjaan",
+    "material": "Materi aturan standar ketenagakerjaan; ringkasan perlu diverifikasi dengan PDF.",
+    "volume": 2
+  },
+  {
+    "id": 59,
+    "ko": "출입국관리법",
+    "id_title": "Undang-undang keimigrasian",
+    "material": "Materi aturan imigrasi; ringkasan perlu diverifikasi dengan PDF.",
+    "volume": 2
+  },
+  {
+    "id": 60,
+    "ko": "근로자 보험",
+    "id_title": "Asuransi pekerja",
+    "material": "Materi asuransi pekerja; ringkasan perlu diverifikasi dengan PDF.",
+    "volume": 2
+  }
+]
