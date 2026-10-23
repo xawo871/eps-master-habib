@@ -95,26 +95,83 @@ const bankStems = [
   "다음 중 {topic}에 가장 알맞은 것은 무엇입니까?"
 ];
 function buildLargeBank(){
- const result={};
- const allWords=Object.entries(chapterWords).flatMap(([id,ws])=>ws.map(w=>({id:+id,w})));
- for(const c of chapters){
-   const ws=chapterWords[c.id]||['회사','공장','근로자','안전','규칙','작업','도구','장소','사용하다','확인하다'];
-   const distractors=allWords.filter(x=>x.id!==c.id).map(x=>x.w);
-   const bank=[];
-   for(let i=0;i<20;i++){
-     for(let j=0;j<10;j++){
-       const clue=ws[j];
-       const answer=ws[(j+i+1)%ws.length];
-       let opts=[answer];
-       let offset=(c.id*17+i*7+j*3)%distractors.length;
-       while(opts.length<4){const w=distractors[offset%distractors.length];if(!opts.includes(w))opts.push(w);offset++;}
-       // Avoid ambiguous option order while preserving the answer key.
-       const rotation=(i+j+c.id)%4;
-       opts=opts.slice(rotation).concat(opts.slice(0,rotation));
-       const a=opts.indexOf(answer);
-       const topic=c.ko;
-       const q=bankStems[i].replaceAll('{topic}',topic)+` (예: ${clue})`;
-       bank.push({q,opts,a,why:'단원 주제와 관련된 어휘를 확인하는 연습 문제입니다.'});
+ /* EPS MASTER — PATCH INTEGRASI AI GEMINI
+   Tempel kode ini untuk mengganti fungsi startQuiz(id) yang lama.
+   Format backend yang diharapkan:
+   { "ok": true, "questions": [{ "q":"...", "opts":["A","B","C","D"], "a":0, "why":"...", "translation":"..." }] }
+*/
+const AI_BACKEND_URL = 'https://script.google.com/macros/s/AKfycbwP6W8F9HVqyBu2Jmnxnot2FrvL4rCzClNrftu6cZ72nTBpfPDjR4DRsjWfbIRQRBwyiA/exec';
+
+function getAIClientId() {
+  let id = '';
+  try { id = localStorage.getItem('epsmaster-ai-client') || ''; } catch (e) {}
+  if (!id) {
+    id = 'client-' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+    try { localStorage.setItem('epsmaster-ai-client', id); } catch (e) {}
+  }
+  return id;
+}
+
+async function startQuiz(id) {
+  current = chapters.find(c => c.id === id);
+  if (!current) return;
+  const count = Number($('#count').value) || 10;
+  questions = [];
+  answers = {};
+  qi = 0;
+
+  $('#quizChapter').textContent = `Bab ${current.id} · ${current.id_title} · AI Gemini`;
+  show('quiz');
+  $('#progress').textContent = 'Membuat soal AI…';
+  $('#question').textContent = 'Tunggu sebentar, AI sedang membuat soal baru sesuai materi bab ini.';
+  $('#options').innerHTML = '';
+  $('#prev').disabled = true;
+  $('#next').classList.add('hidden');
+  $('#submit').classList.add('hidden');
+
+  try {
+    const response = await fetch(AI_BACKEND_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({
+        action: 'generate',
+        chapter: current.id,
+        title: current.id_title,
+        count,
+        vocabulary: current.material || '',
+        clientId: getAIClientId()
+      })
+    });
+    const data = await response.json();
+    if (!response.ok || !data || data.ok !== true || !Array.isArray(data.questions)) {
+      throw new Error((data && data.error) || 'Respons backend tidak sesuai format.');
+    }
+
+    questions = data.questions.map(q => ({
+      q: String(q.q || ''),
+      opts: Array.isArray(q.opts) ? q.opts.map(String) : [],
+      a: Number(q.a),
+      why: String(q.why || q.translation || ''),
+      translation: String(q.translation || ''),
+      vocabulary: Array.isArray(q.vocabulary) ? q.vocabulary : []
+    })).filter(q => q.q && q.opts.length === 4 &&
+      new Set(q.opts).size === 4 && Number.isInteger(q.a) && q.a >= 0 && q.a < 4);
+
+    if (!questions.length) throw new Error('AI tidak mengirim soal dengan empat pilihan yang valid.');
+    renderQuestion();
+  } catch (error) {
+    $('#progress').textContent = 'Soal AI gagal dimuat';
+    $('#question').textContent =
+      'Belum berhasil mengambil soal dari AI. Kemungkinan akses lintas-domain Apps Script diblokir atau format respons berbeda. Detail: ' +
+      (error && error.message ? error.message : 'kesalahan tidak diketahui');
+    $('#options').innerHTML = `<button class="option" id="retryAI">Coba lagi</button>`;
+    $('#retryAI').onclick = () => startQuiz(id);
+    $('#prev').disabled = true;
+    $('#next').classList.add('hidden');
+    $('#submit').classList.add('hidden');
+  }
+}
+
      }
    }
    result[c.id]=bank;
